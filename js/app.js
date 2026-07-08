@@ -5,7 +5,7 @@
 // --- BUG: jQuery is loaded twice (see index.html) via two <script> tags
 // with different filenames but identical content. $.noConflict noise below
 // is a red herring some candidates chase instead of removing the duplicate tag.
-// 10 Fixed : Removed duplicate jquery file and its script tag from index.html
+// 10 Fixed : Removed duplicate jquery file and its declaration
 
 // --- BUG: unbounded array that grows forever and is never trimmed —
 // a classic memory leak. Every mousemove event pushes a new object and
