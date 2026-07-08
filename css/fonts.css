@@ -1,0 +1,17 @@
+/* ===================================================================
+   TrailGear Co. — fonts.css  (added in the "expert" difficulty pass)
+   =================================================================== */
+/* 5.Fixed : Removed unwanted fonts and its files and kept the only required font files which are used in the website */
+
+   
+@font-face {
+  font-family: 'TrailSans';
+  font-weight: 400;
+  src: url('../assets/fonts/trailsans-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'TrailSans';
+  font-weight: 700;
+  src: url('../assets/fonts/trailsans-bold.woff2') format('woff2');
+}
