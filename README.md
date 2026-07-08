@@ -91,12 +91,9 @@ Removed a duplicate initialization call that was executing unnecessarily.
 
 ### 15. Removed unnecessary scroll handling
 
-The purpose of increasing the height of a `div` during scrolling was unclear and appeared unnecessary.
+I couldn't identify a valid use case for this element. Increasing the height of the div while scrolling appears unnecessary and does not seem to provide any functional benefit.
 
-As a result:
-
-* Removed the unused `scroll` event listener.
-* Removed the `equalizeCardHeights()` function, since it was only invoked by that event listener.
+Removed the scroll event listener because it was not required. Since equalizeCardHeights() was only invoked by this event listener, the function was also removed.
 
 ### 16. Made review loading asynchronous
 
