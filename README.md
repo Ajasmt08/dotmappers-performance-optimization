@@ -71,7 +71,7 @@ Removed the unused CSS import:
 
 ### 10. Removed duplicate jQuery script
 
-Removed the duplicate jQuery script tag from `index.html`.
+Removed the duplicate jQuery file and its import from app.js
 
 ### 11. Fixed inefficient DOM updates
 

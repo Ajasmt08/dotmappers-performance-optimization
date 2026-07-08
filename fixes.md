@@ -16,7 +16,7 @@
 
 9. Removed @import url('vendor-framework.css');
 
-10. Removed duplicate jquery file and its script tag from index.html
+10. Removed duplicate jquery file and its declaration from app.js
 
 11. Fixed innerHTML += in a loop which fixied the infinite loading problem
 
