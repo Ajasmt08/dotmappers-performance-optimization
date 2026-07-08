@@ -1,5 +1,12 @@
 # Performance Optimization Report
 
+# Live Demo
+
+The optimized website is deployed and can be accessed using the link below:
+
+**Live Demo:** https://ajasmt08.github.io/dotmappers-performance-optimization/
+
+
 ## Overview
 
 I analyzed the repository and fixed the identified performance issues.
