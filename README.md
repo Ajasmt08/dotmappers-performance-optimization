@@ -82,15 +82,25 @@ Removed the duplicate jQuery file and its import from app.js
 
 ### 11. Fixed inefficient DOM updates
 
-Replaced `innerHTML +=` inside a loop with a more efficient approach, resolving the continuous rendering and loading issue.
+Resolved the infinite loading issue by moving:
+
+```javascript
+list.innerHTML = html;
+```
+
+outside the loop. Previously, `innerHTML` was being updated on every iteration, causing the reviews to be re-rendered unnecessarily.
 
 ### 12. Fixed memory leak
 
-Resolved an unbounded array growth issue that was causing a memory leak.
+Resolved an unbounded array growth issue by adding a maximum buffer size.
 
-### 13. Removed unused resize listener
+Implemented `shift()` along with a length limit so that when the array exceeds **100** items, the oldest mouse position is removed. This ensures that only the latest 100 positions are kept in memory, preventing unnecessary memory growth.
 
-Removed the unused `resize` event listener, reducing unnecessary event handling.
+### 13. Removed unnecessary resize event listener
+
+Removed the unnecessary `resize` event listener and applied the required transform during initialization instead.
+
+This prevents multiple event listener registrations and avoids unnecessary work on every window resize, resulting in improved runtime performance.
 
 ### 14. Removed duplicate initialization
 
